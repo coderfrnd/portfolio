@@ -9,7 +9,7 @@ export const projectsDescArray = [
   {
     name: 'Dashboard App',
     imge: dashboard,
-    description: 'A full-featured dashboard showing patient, staff, and financial data with charts, stats, and calendar view. Built using React and Material UI.'
+    description: 'A full-featured dashboard showing patient, staff, and financial data with charts, stats, and calendar view. Built using React and Material UI and in backend Json-server.'
   },
   {
     name: 'Small Case Clone',
