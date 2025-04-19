@@ -5,24 +5,26 @@ import Profile from './Component/Profile'
 
 const App = () => {
   return (
-    <>
-      <div className="h-screen bg-black text-white relative">
-        <Navbar />
-        <div className='flex justify-center'>
-        <div
-          className="flex justify-center  pt-[80px] w-[67%] "
-          style={{ height: 'calc(100vh - 10px)' }}
-        >
-          <div className='w-[30%] mt-[50px]'>
-          <Profile />
+    <div className="h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden">
+      <Navbar />
+      <div className="h-[calc(100vh-80px)] max-w-6xl mx-auto px-4 pt-20">
+        <div className="flex flex-col lg:flex-row gap-8 h-full">
+          {/* Profile Section */}
+          <div className="w-full lg:w-1/3">
+            <div className="bg-gray-900/50 backdrop-blur-lg rounded-lg p-6 shadow-xl border border-gray-800/50">
+              <Profile />
+            </div>
           </div>
-          <div className="w-[70%] scrollable-box  overflow-y-auto mt-[50px]">
-            <MiddleSection />
+          
+          {/* Main Content Section */}
+          <div className="w-full lg:w-2/3 h-full">
+            <div className="bg-gray-900/50 backdrop-blur-lg rounded-lg p-6 shadow-xl border border-gray-800/50 h-full scrollable-box overflow-y-auto">
+              <MiddleSection />
+            </div>
           </div>
-        </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

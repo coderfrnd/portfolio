@@ -1,30 +1,43 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 20;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [scrolled]);
+
   return (
-    <>
-      <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-        <div className="max-w-screen-xl justify-between flex items-center mx-auto p-4 py-8">
-          <span className="text-2xl font-semibold whitespace-nowrap dark:text-white mr-8">
-            Abhishek Jaiswal
-          </span>
-          <ul className="flex space-x-[150px] font-medium">
-            <li>
-              <a href="#" className="text-blue-700 dark:text-blue-500">Home</a>
+    <nav className={`fixed w-full z-20 top-0 left-0 transition-all duration-300 ${
+      scrolled ? 'bg-black/80 backdrop-blur-md' : 'bg-transparent'
+    }`}>
+      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+        <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+          Abhishek Jaiswal
+        </span>
+        <ul className="flex space-x-8 font-medium">
+          {['Home', 'About', 'Services', 'Contact'].map((item) => (
+            <li key={item}>
+              <a
+                href={`#${item.toLowerCase()}`}
+                className="text-gray-300 hover:text-blue-500 transition-colors duration-300 relative group"
+              >
+                {item}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+              </a>
             </li>
-            <li>
-              <a href="#" className="text-gray-900 dark:text-white hover:text-blue-700">About</a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-900 dark:text-white hover:text-blue-700">Services</a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-900 dark:text-white hover:text-blue-700">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </>
+          ))}
+        </ul>
+      </div>
+    </nav>
   )
 }
 

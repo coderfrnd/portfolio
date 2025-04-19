@@ -1,8 +1,9 @@
-
 import React from 'react'
 import About from './About'
 import Languages from './Languages'
 import Projects from './Projects'
+import GitHubCalendar from 'react-github-calendar'
+import Githubactivity from './Githubactivity'
 const MiddleSection = () => {
     
   return (
@@ -11,6 +12,7 @@ const MiddleSection = () => {
        <About/>
        <Languages/>
        <Projects/>
+     <Githubactivity/>
    </div>
   </>
   )
