@@ -63,10 +63,10 @@ const Projects = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-2">
+          <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             My Projects
           </h2>
-          <p className="text-gray-400">
+          <p className="text-gray-300">
             A showcase of my recent work
           </p>
         </div>
