@@ -30,7 +30,7 @@ const About = () => {
             <div className="grid grid-cols-1 gap-4 pt-2">
               <div className="bg-gray-800/50 rounded-lg p-4 backdrop-blur-sm">
                 <h3 className="text-white font-semibold mb-2">Technical Expertise</h3>
-                <p>Specialized in React.js, Node.js, and JavaScript, building scalable and performant web applications.</p>
+                <p>Specialized in React.js, Node.js, and JavaScript, building scalable and performance web applications.</p>
               </div>
               
               <div className="bg-gray-800/50 rounded-lg p-4 backdrop-blur-sm space-y-4">
