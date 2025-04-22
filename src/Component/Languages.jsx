@@ -10,25 +10,37 @@ import html from '/Assets/html.png'
 import react from '/Assets/react.png'
 import github from '/Assets/github.png'
 import express from '/Assets/express.png'
+import c from '/Assets/C.png'
+import tailwind from '/Assets/tailwind.png'
+import mongodb from '/Assets/mongodb.png'
+import mui from '/Assets/mui.png'
+import postman from '/Assets/postman.png'
+import firebase from '/Assets/firebase.png'
 
 const Languages = () => {
     const technologies = {
       "Programming Languages": [
         { id: 'js', img: javascript, name: 'JavaScript' },
         { id: 'python', img: python, name: 'Python' },
-        { id: 'cpp', img: cpp, name: 'C++' }
+        { id: 'cpp', img: cpp, name: 'C++' },
+        { id: 'c', img: c, name: 'C' },
+        { id: 'prog', img: programming, name: 'Programming/DSA' }
       ],
       "Web Technologies": [
         { id: 'html', img: html, name: 'HTML/CSS' },
         { id: 'react', img: react, name: 'React.js' },
         { id: 'node', img: node, name: 'Node.js' },
-        { id: 'express', img: express, name: 'Express.js' }
+        { id: 'express', img: express, name: 'Express.js' },
+        { id: 'tailwind', img: tailwind, name: 'Tailwind CSS' },
+        { id: 'mui', img: mui, name: 'Material UI' }
       ],
       "Tools & Platforms": [
         { id: 'github', img: github, name: 'GitHub' },
         { id: 'linux', img: linux, name: 'Linux' },
         { id: 'sql', img: sql, name: 'MySQL' },
-        { id: 'prog', img: programming, name: 'Programming' }
+        { id: 'mongodb', img: mongodb, name: 'MongoDB' },
+        { id: 'firebase', img: firebase, name: 'Firebase' },
+        { id: 'postman', img: postman, name: 'Postman' },
       ]
     }
 

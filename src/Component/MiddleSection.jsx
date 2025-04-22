@@ -12,14 +12,14 @@ const MiddleSection = () => {
     
   return (
   <>
-   <div className=' w-[100%] overflow-y-auto text-center border-[1px] border-gray-500 rounded-[5px] shadow-md'>
-       <About/>
+   <div className='w-[100%] overflow-y-auto text-center border-[1px] border-gray-500 rounded-[5px] shadow-md'>
+       <section id="about" className="pt-2 pb-2"><About/></section>
        <Languages/>
        <Skills/>
-       <Projects/>
-       <Githubactivity/>
+       <section id="projects" className="pt-20 pb-10"><Projects/></section>
+       <section id="github" className="pt-20 pb-10"><Githubactivity/></section>
        <Achievement/>
-       <Contact/>
+       <section id="contact" className="pt-20 pb-10"><Contact/></section>
    </div>
   </>
   )

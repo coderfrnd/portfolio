@@ -7,18 +7,18 @@ const About = () => {
     <article className="w-full">
       <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg p-8 space-y-8">
         {/* Introduction */}
-        <div className="text-center space-y-2">
+        {/* <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
             Hi, I'm Abhishek Jaiswal
           </h1>
           <p className="text-gray-400 text-lg">@coderfrnd</p>
-        </div>
+        </div> */}
 
         {/* About Section */}
         <div className="space-y-4">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center  gap-3">
             <div className="h-8 w-1 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
-            <h2 className="text-2xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text font-bold text-transparent">About Me</h2>
+            <h2 className="text-2xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text  font-bold text-transparent">About Me</h2>
           </div>
 
           <div className="space-y-4 text-gray-300 leading-relaxed">

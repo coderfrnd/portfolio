@@ -1,13 +1,13 @@
 import React from 'react'
 import MiddleSection from './Component/MiddleSection'
-import Navbar from './Component/Navbar'
 import Profile from './Component/Profile'
+import Navbar from './Component/Navbar'
 
 const App = () => {
   return (
     <div className="h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden">
       <Navbar />
-      <div className="h-[calc(100vh-80px)] max-w-6xl mx-auto px-4 pt-20">
+      <div className="h-full max-w-6xl mx-auto px-4 pt-16">
         <div className="flex flex-col lg:flex-row gap-8 h-full">
           {/* Profile Section */}
           <div className="w-full lg:w-1/3">

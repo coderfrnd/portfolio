@@ -29,14 +29,24 @@ const ProjectCard = ({ project }) => {
           {project.description}
         </p>
         <div className="flex justify-center gap-4">
-          <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 flex items-center gap-2">
+          <a 
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 flex items-center gap-2"
+          >
             <FaGithub className="text-lg" />
             View Code
-          </button>
-          <button className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-300 flex items-center gap-2">
+          </a>
+          <a 
+            href={project.demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 cursor-pointer bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-300 flex items-center gap-2"
+          >
             <FaExternalLinkAlt className="text-lg" />
             Live Demo
-          </button>
+          </a>
         </div>
       </div>
     </motion.div>
@@ -62,8 +72,12 @@ const Projects = () => {
     <section className="py-5 px-4 bg-gray-900">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+        {/* <div className="flex items-center  gap-3">
+            <div className="h-8 w-1 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
+            <h2 className="text-2xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text  font-bold text-transparent">About Me</h2>
+          </div> */}
+        <div className="text-center mb-6">
+          <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
             My Projects
           </h2>
           <p className="text-gray-300">
@@ -84,7 +98,7 @@ const Projects = () => {
           <div className="flex justify-between mt-6">
             <button
               onClick={prevSlide}
-              className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 text-white transition-all duration-300"
+              className="p-2 cursor-pointer rounded-full bg-gray-700 hover:bg-gray-600 text-white transition-all duration-300"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -95,7 +109,7 @@ const Projects = () => {
             </div>
             <button
               onClick={nextSlide}
-              className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 text-white transition-all duration-300"
+              className="p-2 cursor-pointer rounded-full bg-gray-700 hover:bg-gray-600 text-white transition-all duration-300"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
