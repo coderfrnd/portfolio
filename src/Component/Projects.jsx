@@ -21,8 +21,10 @@ const ProjectCard = ({ project }) => {
       </div>
 
       {/* Content Container */}
-      <div className="w-full text-center">
-        <h2 className="text-2xl font-bold text-white mb-3">
+      <div className="w-full text-center bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700/50 
+                     hover:border-blue-500/30 hover:shadow-lg hover:shadow-blue-500/10 
+                     transition-all duration-300 group">
+        <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent mb-3">
           {project.name}
         </h2>
         <p className="text-gray-300 mb-6">
@@ -33,7 +35,7 @@ const ProjectCard = ({ project }) => {
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 flex items-center gap-2"
+            className="px-4 py-2 cursor-pointer bg-blue-600/80 hover:bg-blue-600 text-white rounded-lg transition-all duration-300 flex items-center gap-2"
           >
             <FaGithub className="text-lg" />
             View Code
@@ -42,7 +44,7 @@ const ProjectCard = ({ project }) => {
             href={project.demoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 cursor-pointer bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-300 flex items-center gap-2"
+            className="px-4 py-2 cursor-pointer bg-green-600/80 hover:bg-green-600 text-white rounded-lg transition-all duration-300 flex items-center gap-2"
           >
             <FaExternalLinkAlt className="text-lg" />
             Live Demo

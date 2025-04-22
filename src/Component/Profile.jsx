@@ -1,5 +1,5 @@
 import React from 'react'
-import profileImg from '/Assets/Img3.jpg'
+import profileImg from '/Assets/img.jpg'
 import { FaFileDownload } from 'react-icons/fa'
 
 const Profile = () => {
