@@ -59,16 +59,16 @@ const Skills = () => {
 
       {/* Technical Skills */}
       <div className="mb-8">
-        <h3 className="text-xl font-semibold text-white mb-4">Technical Skills</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <h3 className="text-lg sm:text-xl font-semibold text-white mb-4">Technical Skills</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
           {technicalSkills.map((skill, index) => (
-            <div key={index} className="bg-gray-800/50 rounded-lg p-4 backdrop-blur-sm">
+            <div key={index} className="bg-gray-800/50 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2">
                   {skill.icon}
-                  <span className="text-white">{skill.name}</span>
+                  <span className="text-white text-sm sm:text-base">{skill.name}</span>
                 </div>
-                <span className="text-sm text-gray-400">{skill.level}%</span>
+                <span className="text-xs sm:text-sm text-gray-400">{skill.level}%</span>
               </div>
               <div className="w-full bg-gray-700 rounded-full h-2">
                 <div
@@ -83,13 +83,13 @@ const Skills = () => {
 
       {/* Certifications */}
       <div className="mb-8">
-        <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-          <FaCertificate className="text-blue-500 text-3xl" />
+        <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6 flex items-center gap-3">
+          <FaCertificate className="text-blue-500 text-2xl sm:text-3xl" />
           <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
             Certifications
           </span>
         </h3>
-        <div className="relative px-4">
+        <div className="relative px-2 sm:px-4">
           <div className="overflow-hidden rounded-xl">
             <div 
               className="flex transition-transform duration-500 ease-in-out"

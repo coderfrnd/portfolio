@@ -41,38 +41,38 @@ const Achievement = () => {
         <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Achievements</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         {achievements.map((item, index) => (
           <div 
             key={index} 
-            className="bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm border border-gray-700/50 
+            className="bg-gray-800/50 rounded-lg p-4 sm:p-6 backdrop-blur-sm border border-gray-700/50 
                      hover:border-blue-500/30 hover:shadow-lg hover:shadow-blue-500/10 
                      transition-all duration-300 group"
           >
-            <div className="flex items-center gap-4 mb-4">
-              <div className="p-3 rounded-lg bg-gray-700/50 group-hover:bg-gray-700/70 transition-colors duration-300">
+            <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+              <div className="p-2 sm:p-3 rounded-lg bg-gray-700/50 group-hover:bg-gray-700/70 transition-colors duration-300">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors duration-300">
+              <h3 className="text-lg sm:text-xl font-semibold text-white group-hover:text-blue-400 transition-colors duration-300">
                 {item.title}
               </h3>
             </div>
             
-            <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+            <p className="text-gray-300 mb-3 sm:mb-4 text-sm leading-relaxed">
               {item.description}
             </p>
             
             <div className="flex justify-between items-center">
-              <p className="font-medium text-emerald-400">
+              <p className="font-medium text-emerald-400 text-sm sm:text-base">
                 {item.achievement}
               </p>
               <a 
                 href={item.link} 
-                className="text-sm text-gray-400 hover:text-blue-400 transition-colors duration-300 
+                className="text-xs sm:text-sm text-gray-400 hover:text-blue-400 transition-colors duration-300 
                          flex items-center gap-1 group-hover:translate-x-1"
               >
                 View
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
