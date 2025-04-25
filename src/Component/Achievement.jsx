@@ -27,7 +27,7 @@ const Achievement = () => {
     },
     {
       title: "Codeforces",
-      description: "Active competitive programmer with consistent participation in Div. 2 and Div. 3 contests. Achieved Pupil rank with a peak rating of 1224, demonstrating strong problem-solving abilities in algorithmic challenges.",
+      description: "Active competitive programmer with consistent participation in Div. 2 and Div. 3 contests. Achieved Pupil rank with a peak rating of 1224, and also solved more than 500 plus problem on codeforces  demonstrating strong problem-solving abilities in algorithmic challenges.",
       achievement: "Pupil 🟢-max(1224)",
       icon: <SiCodeforces className="text-blue-500 text-3xl" />,
       link: "https://codeforces.com/profile/Attacker_frnd"
