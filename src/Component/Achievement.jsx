@@ -66,16 +66,6 @@ const Achievement = () => {
               <p className="font-medium text-emerald-400 text-sm sm:text-base">
                 {item.achievement}
               </p>
-              <a 
-                href={item.link} 
-                className="text-xs sm:text-sm text-gray-400 hover:text-blue-400 transition-colors duration-300 
-                         flex items-center gap-1 group-hover:translate-x-1"
-              >
-                View
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
             </div>
           </div>
         ))}
